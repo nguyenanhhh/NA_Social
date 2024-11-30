@@ -15,10 +15,10 @@ This is the frontend for the Social Media App built for Android. It is designed 
 
 3. Open the project in Android Studio.
 
-4. **Sync the project with Gradle**:
+4. Sync the project with Gradle:
    - After opening the project in Android Studio, it will automatically prompt you to sync with Gradle. If it doesn't, you can manually sync it by clicking "Sync Now" in the toolbar.
 
-5. **Build and run the app**:
+5. Build and run the app:
 
 ## Features
 

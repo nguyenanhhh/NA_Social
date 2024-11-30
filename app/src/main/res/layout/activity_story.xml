@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33221A">
+
+    <!-- Story Content (Image/Video Placeholder) -->
+    <ImageView
+        android:id="@+id/story_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/storyig"
+        android:scaleType="centerCrop" />
+
+    <!-- Top Bar with Back Button and Time Display -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back"
+            android:contentDescription="Back"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Time Display -->
+        <TextView
+            android:id="@+id/time_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:56"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Right Side Icons for Story Options -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <!-- Add Sticker/Emoji Icon -->
+        <ImageView
+            android:id="@+id/add_sticker"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/sticker"
+            android:contentDescription="Add Sticker"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Add Text Icon -->
+        <ImageView
+            android:id="@+id/add_text"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/text"
+            android:contentDescription="Add Text"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Add Music Icon -->
+        <ImageView
+            android:id="@+id/add_music"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/music"
+            android:contentDescription="Add Music"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Done (Check) Icon -->
+        <ImageView
+            android:id="@+id/done_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/check"
+            android:contentDescription="Done"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+
+    <!-- Bottom Bar with Tag Friends and Share Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <!-- Tag Friends Button -->
+        <Button
+            android:id="@+id/tag_friends_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tag Friends"
+            android:backgroundTint="#E7F3FF"
+            android:textColor="#1877F2"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp" />
+
+        <!-- Share Button -->
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Now"
+            android:backgroundTint="#1877F2"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

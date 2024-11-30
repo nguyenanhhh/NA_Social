@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.kt.na_social.fragments.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.kt.na_social.fragments.auth.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+
+    <fragment
+        android:id="@+id/listFeedFragment"
+        android:name="com.kt.na_social.feed.ListFeedFragment"
+        android:label="fragment_list_feed"
+        tools:layout="@layout/fragment_list_feed" />
+
+
+    <action
+        android:id="@+id/link_go_to_login"
+        app:destination="@id/loginFragment" />
+    <action
+        android:id="@+id/link_go_to_register"
+        app:destination="@id/registerFragment" />
+    <action
+        android:id="@+id/link_go_to_feed"
+        app:destination="@id/listFeedFragment" />
+    <action
+        android:id="@+id/link_go_to_intro"
+        app:destination="@id/introFragment" />
+    <action
+        android:id="@+id/link_go_to_new_feed"
+        app:destination="@id/newFeedFragment" />
+    <action
+        android:id="@+id/link_go_to_search"
+        app:destination="@id/searchFragment" />
+    <action
+        android:id="@+id/link_go_to_noti"
+        app:destination="@id/notificationFragment" />
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.kt.na_social.intro.IntroFragment"
+        android:label="fragment_intro_fragment"
+        tools:layout="@layout/fragment_intro_fragment" />
+    <fragment
+        android:id="@+id/newFeedFragment"
+        android:name="com.kt.na_social.feed.NewFeedFragment"
+        android:label="NewFeedFragment"
+        tools:layout="@layout/fragment_new_feed"/>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.kt.na_social.feed.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search"/>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.kt.na_social.feed.NotificationFragment"
+        android:label="NotificationFragment"
+        tools:layout="@layout/fragment_notification"/>
+</navigation>

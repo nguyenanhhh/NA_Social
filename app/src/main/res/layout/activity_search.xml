@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Search Bar with Back Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/search"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search for users, posts, or stories..."
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+           />
+    </LinearLayout>
+
+    <!-- Tabs for User, Post, Story -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:tabIndicatorColor="#0067e6"
+        app:tabTextColor="@color/black"
+        app:tabSelectedTextColor="#0067e6"
+        app:tabMode="fixed">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_user"
+            android:text="User"  android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_post"
+            android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:text="Post" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:id="@+id/tab_story"
+            android:text="Story" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- Results Section Title -->
+    <TextView
+        android:id="@+id/results_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Users"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

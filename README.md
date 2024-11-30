@@ -18,15 +18,7 @@ This is the frontend for the Social Media App built for Android. It is designed 
 4. Sync the project with Gradle:
    - After opening the project in Android Studio, it will automatically prompt you to sync with Gradle. If it doesn't, you can manually sync it by clicking "Sync Now" in the toolbar.
 
-5. Build and run the app:
-
-## Features
-
-- User authentication (login/register)
-- Profile management (view/edit profile)
-- Newsfeed to display posts from friends
-- Ability to post text, images, and videos
-- Like, comment, and share posts
+5. Build and run the app
 
 ## Usage
 
@@ -37,5 +29,5 @@ Once the app is running, you can:
 3. Post your own status, images, or videos.
 4. Like and comment on other people's posts.
    
-## Link Demo
+## Link Demo: 
 
